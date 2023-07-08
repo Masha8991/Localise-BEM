@@ -1,0 +1,535 @@
+@import './colors.scss';
+@import './fonts.scss';
+@import './flex-grid.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container{
+    @include flex(space-around,none,none);
+    border-bottom: 1px solid #CCCCCC;
+
+    &__header{
+        @include flex(flex-start,center,51px);
+    }
+}
+
+.header{
+    @include flex(flex-start,center,51px);
+}
+
+.item{
+    @include flex(center,center,57px);
+
+    &__item-link{
+        @include Roboto(15px, 400, 20px);
+        color: $black;
+        padding: 39px 0; 
+    }
+}
+
+.btn{
+    @include flex(center,center,10px);
+
+    &__login{
+        color: $black;
+        @include Roboto(16px, 600, 45px);
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.50);
+        padding: 1px 36px; 
+    }
+
+    &__try-it-free{
+        color: $white;
+        @include Roboto(16px, 600, 45px);
+        text-align: center;
+        background: $orange;
+        padding: 1px 21px; 
+    } 
+}
+
+.section1{
+    @include flex(center,center,10px);
+    padding: 130px 75px;
+}
+
+.text{
+    @include flex(center,center,none);
+    flex-direction: column;
+    text-align: left;
+
+    &__heading{
+        @include Roboto(65px, 600, 70px); 
+        margin-bottom: 51px;
+        color: $black;
+    }
+
+    &__description{
+        @include Roboto(25px, 400, 35px); 
+        margin-bottom: 50px;
+        color: $black;
+    }
+}
+
+.buttons{
+    @include flex(center,center,10px);
+    margin-bottom: 24px;
+
+    &__try{
+        @include Roboto(16px, 600, 60px); 
+        padding: 1px 42px;
+        background: $orange; 
+        color: $white;
+        text-align: center;
+    }
+
+    &__book-a-demo{
+        @include Roboto(16px, 600, 60px); 
+        padding: 1px 29px;
+        color: $black;
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.50);
+    }
+}
+
+.note{
+    @include Roboto(15px, 400, 25px); 
+    color: $black;
+    margin-bottom: 35px;
+}
+
+.section2{
+    background-color: $orange2;
+    padding: 95px 0 94px;
+    margin-bottom: 100px;
+
+    h1{
+        @include Roboto(50px, 600, 60px); 
+        color: $black;
+        text-align: center;
+        margin-bottom: 82px;
+    }
+}
+
+.icons{
+    @include flex(space-around,center,0px);
+}
+
+.section3{
+    padding: 0 75px;
+    margin-bottom: 250px;
+}
+
+.block{
+    @include grid(center,center,1fr 1fr,0px);
+}
+
+.text{
+    @include grid(center,center,none,30px);
+    padding: 5.5px 20px 5.5px 0px; 
+
+    h1{
+        @include Roboto(50px, 600, 60px); 
+        color: $black;
+    }
+
+    p{
+        @include Roboto(20px, 400, 30px); 
+        color: $black;
+        width: 90%;
+    }
+
+    span{
+        @include Roboto(20px, 600, 30px); 
+        color: $black;
+    }
+}
+
+.section4{
+    padding: 0 75px;
+    margin-bottom: 250px;
+}
+
+.block1{
+    @include grid(center,center,1fr 1fr,0px);
+}
+
+.text1{
+    @include grid(center,center,none,24.5px);
+    padding: 5.5px 0px 71px 137.906px;
+
+    h1{
+        @include Roboto(50px, 600, 60px); 
+        color: $black;
+    }
+
+    p{
+        @include Roboto(20px, 400, 30px); 
+        color: $black;
+    }
+
+    span{
+        @include Roboto(20px, 600, 30px); 
+        color: $black;
+    }
+}
+
+.section5{
+    padding: 0 75px;
+    margin-bottom: 250px;
+}
+
+.block2{
+    @include grid(center,center,1fr 1fr,0px);
+}
+
+.text2{
+    @include grid(center,center,none,30px);
+    padding: 5.5px 80px 5.5px 0px;
+
+    h1{
+        @include Roboto(50px, 600, 60px); 
+        color: $black;
+    }
+
+    p{
+        @include Roboto(20px, 400, 30px); 
+        color: $black;
+    }
+
+    span{
+        @include Roboto(20px, 600, 30px); 
+        color: $black;
+    }
+}
+
+.section6{
+    padding: 0 75px;
+    margin-bottom: 150px;
+}
+
+.block3{
+    @include grid(center,center,1fr 1fr,137px);
+}
+
+.text3{
+    @include grid(center,center,none,30px);
+
+    h1{
+        @include Roboto(50px, 600, 60px); 
+        color: $black;
+    }
+
+    p{
+        @include Roboto(20px, 400, 30px); 
+        color: $black;
+    }
+
+    span{
+        @include Roboto(20px, 600, 30px); 
+        color: $black;
+    }
+}
+
+.developers{
+    @include grid(center,center,none,9.5px);
+    background-color: $yellow;
+    padding: 120px 66px;
+
+    p{
+        @include Roboto(14px, 400, 30px); 
+        color: $black;
+        width: 70%; 
+        margin: auto;
+    }
+
+    &__dev-container{
+        border-radius: 4px;
+        background: $white;
+        padding: 30px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);    
+    }
+  }
+  
+  .section7{
+    padding: 120px 75px;
+    background-color: $yellow;
+  }
+
+  .title{
+    @include Roboto(50px, 600, 60px); 
+    color: $black;
+    text-align: center;
+    margin-bottom: 79px;
+  }
+
+  .cardsec{
+    @include grid(center,start,1fr 1fr 1fr,100px);
+  }
+
+  .card{
+    @include grid(center,center,none,23px);
+    justify-items: center;
+    
+    h1{
+        @include Roboto(25px, 600, 35px); 
+        color: $black;
+        text-align: center;
+    }
+
+    p{
+        @include Roboto(18px, 400, 25px); 
+        color: $black;
+        text-align: center;
+    }
+}
+
+.section8{
+    padding: 154px 75px;
+}
+
+.title{
+    @include flex(center,center,none);
+    @include Roboto(45px, 600, 60px); 
+    color: $black;
+    margin-bottom: 80px;
+}
+
+.teamsec{
+    @include flex(center,center,30px);
+}
+
+.team{   
+    @include flex(center,flex-start,0px); 
+    flex-direction: column;
+
+    img{
+        width: 179px;
+        height: 183px;
+        margin-bottom: 49px; 
+    }
+
+    h1{
+        @include Roboto(30px, 600, 40px); 
+        color: $black;
+        margin-bottom: 34px; 
+    }
+
+    p{
+        @include Roboto(20px, 400, 30px); 
+        color: $black;
+        margin-bottom: 25px;
+    }
+
+    span{
+        @include Roboto(20px, 400, 30px); 
+        color: $black;
+        text-decoration-line: underline; 
+    }
+}
+
+.section9{
+    @include flex(center,center,0px); 
+    background: $blue;
+    padding: 120px 75px;
+}
+
+.quote{
+    @include flex(center,flex-start,20px); 
+    flex-direction: column;
+
+    p{
+        @include Roboto(30px, 400, 40px); 
+        color: $black;
+        width: 95%;
+    }
+
+    span{
+        @include Roboto(15px, 400, 25px); 
+        color: $black;
+    }
+}
+
+.section10{
+    background: $brown;
+    padding: 100px 0;
+}
+
+.cont{
+    @include flex(space-around,center,0px); 
+}
+
+.cake{
+    @include flex(center,center,67px); 
+    border-right: 1px solid #000;
+
+    h1{
+        @include Roboto(35px, 600, 50px); 
+        color: $black;
+        width: 461px; 
+    }
+}
+
+.rating{
+    @include flex(space-between,center,0px); 
+    width: 35%;
+}
+
+.rate{
+    img{
+        margin-bottom: 17px;
+    }
+
+    p{
+        @include Roboto(15px, 400, 25px); 
+        color: $black;
+        letter-spacing: 0.75px; 
+    }
+}
+
+.section11{
+    @include flex(center,center,20px); 
+    flex-direction: column;
+    padding: 169px 0;
+
+    h1{
+        @include Roboto(65px, 600, 75px); 
+        color: $black;
+        text-align: center;
+        width: 60%;
+    }
+
+    p{
+        @include Roboto(25px, 400, 30px); 
+        color: $black;
+        text-align: center;
+        width: 40%;
+    }
+
+    button{
+        @include Roboto(16px, 600, 60px); 
+        background: $orange;
+        color: $white;
+        text-align: center;
+        border: none;
+        padding: 0 20px;  
+    }
+}
+
+.section12{
+    @include flex(center,center,0px); 
+    flex-direction: column;
+    background-color: $orange2;
+    padding: 150px 0;
+
+    h1{
+        @include Roboto(65px, 600, 75px); 
+        color: $black;
+        text-align: center;
+        width: 60%;
+        margin-bottom: 29px;
+    }
+
+    p{
+        @include Roboto(20px, 400, 30px); 
+        color: $black;
+        text-align: center;
+        width: 40%;
+        margin-bottom: 54px;
+    }
+
+    button{
+        @include Roboto(17px, 600, 60px); 
+        background-color: $black;
+        color: $white;
+        text-align: center;
+        border: none;
+        padding: 0 40px;  
+    }
+}
+
+.section13{
+    background-color: $grey;
+    padding: 92px 75px 0;
+}
+
+.columns{
+    @include flex(none,none,0px); 
+}
+
+.col{
+    @include flex(center,flex-start,0px); 
+    flex-direction: column;
+
+    h1{
+        @include Roboto(40px, 600, 50px); 
+        color: $black;
+        margin-bottom: 28px;
+    }
+
+    img{
+        margin-bottom: 31px;
+    }
+
+    &__logo{
+        width: 80px;
+        height: 32px;
+    }
+
+    p{
+        @include Roboto(20px, 400, 30px); 
+        color: $black;
+        width: 70%;
+        margin-bottom: 15px;
+    }
+
+    span{
+        @include Roboto(20px, 600, 30px); 
+        color: $black;
+        margin-bottom: 95px;
+    }
+}
+
+.col2{
+    @include grid(center,start,repeat(4, 1fr),75px);
+
+    ul{
+        @include Roboto(15px, 400, 25px); 
+        color: $black;
+        width: 150%;
+    }
+
+    &__title{
+        @include Roboto(20px, 600, 25px); 
+        color: $black;
+        margin-bottom: 21px;
+    }
+}
+
+.holder{
+    @include flex(space-between,center,0px); 
+    border-top: 1px solid #000;
+}
+
+.localise{
+    @include flex(none,center,14px); 
+
+    p{
+        @include Roboto(12px, 400, 15px); 
+        color: $black;
+        width: 50%; 
+        padding: 53px 0;
+    }
+}
+
+.years{
+    p{
+        @include Roboto(12px, 400, 15px); 
+        color: $black;
+        padding-right: 76px;
+    }
+}
